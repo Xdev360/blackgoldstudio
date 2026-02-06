@@ -1,0 +1,150 @@
+<!-- ========================================
+    QUICK CUSTOMIZATION GUIDE
+    Replace these placeholders with your own content
+    ======================================== -->
+
+<!-- FILE: index.html -->
+
+<!-- STEP 1: Update these social media links -->
+<!-- INSTAGRAM: Line ~104 -->
+<a href="https://instagram.com/yourbrand" target="_blank" rel="noopener noreferrer">
+
+<!-- TIKTOK: Line ~119 -->
+<a href="https://tiktok.com/@yourbrand" target="_blank" rel="noopener noreferrer">
+
+<!-- SNAPCHAT: Line ~134 -->
+<a href="https://snapchat.com/add/yourbrand" target="_blank" rel="noopener noreferrer">
+
+<!-- WEBSITE: Line ~73 -->
+<a href="https://www.yourwebsite.com" target="_blank" rel="noopener noreferrer">
+
+<!-- SHOP: Line ~85 -->
+<a href="https://www.yourshop.com" target="_blank" rel="noopener noreferrer">
+
+<!-- STEP 2: Update brand information -->
+<!-- BRAND NAME: Line ~54 -->
+<h1 class="brand-name">Blackgold Studio</h1>
+<!-- Change "Blackgold Studio" to your brand name -->
+
+<!-- TAGLINE: Line ~57 -->
+<p class="tagline">✨ Glow begins with care ✨</p>
+<!-- Change tagline to your own message -->
+
+<!-- INTRODUCTION TEXT: Line ~68 -->
+<p class="intro-text">Welcome to your skincare sanctuary. Explore our premium self-care collection and join thousands of glowing customers.</p>
+<!-- Update with your brand message -->
+
+
+<!-- STEP 3: Update SEO Meta Tags (In <head> section) -->
+
+<!-- Description: Line ~12 -->
+<meta name="description" content="Your custom description here">
+
+<!-- Keywords: Line ~13 -->
+<meta name="keywords" content="your, keywords, here">
+
+<!-- Page Title: Line ~38 -->
+<title>Your Brand Name - Your Tagline</title>
+
+<!-- OG Image (for social sharing): Line ~24 -->
+<meta property="og:image" content="https://your-image-url.com/og-image.png">
+<!-- Recommended size: 1200x630px -->
+
+<!-- OG URL: Line ~25 -->
+<meta property="og:url" content="https://your-website.com">
+
+
+<!-- STEP 4: Update button descriptions -->
+<!-- All button subtexts can be customized by finding and editing lines like: -->
+<span class="button-subtext">Your custom description</span>
+
+
+<!-- FILE: styles.css -->
+
+<!-- PRIMARY COLORS: Lines ~200-220 -->
+/* Look for these hex colors and replace them: */
+#D4A5D4  /* Purple - Primary */
+#F8C4E6  /* Pink - Secondary */
+#8B5A8B  /* Deep Purple - Accent */
+
+/* Example: Global color replacement in CSS */
+.logo: {
+    background: linear-gradient(135deg, #D4A5D4 0%, #F8C4E6 100%);
+    /* ^^ Change these colors */
+}
+
+<!-- FOOTER: Line ~660 (HTML file) -->
+<footer class="footer">
+    <p>&copy; 2025 Your Brand Name. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</footer>
+
+
+<!-- ========================================
+    KEY CUSTOMIZATION CHECKLIST
+    ======================================== -->
+
+☐ 1. Update brand name (H1 tag)
+☐ 2. Update tagline
+☐ 3. Update intro text
+☐ 4. Replace logo SVG or add image
+☐ 5. Update all social media URLs
+☐ 6. Update website and shop URLs
+☐ 7. Customize button descriptions
+☐ 8. Update SEO meta tags (description, keywords, title)
+☐ 9. Update Open Graph image and URL
+☐ 10. Update footer copyright and links
+☐ 11. Add brand colors to CSS (find and replace hex codes)
+☐ 12. Upload logo/images to assets/ folder
+☐ 13. Test all links work correctly
+☐ 14. Test on mobile devices
+☐ 15. Deploy to hosting platform
+
+
+<!-- ========================================
+    COLOR CUSTOMIZATION REFERENCE
+    ======================================== -->
+
+Current Color Palette:
+- Primary Gradient: #D4A5D4 → #F8C4E6
+- Deep Purple: #8B5A8B
+- Text: #4a4a4a (dark gray)
+- Light Text: #6b6b6b (medium gray)
+- Subtle Text: #a0a0a0 (light gray)
+- Background: Gradient blend (pastel)
+
+To change all colors:
+1. Open styles.css
+2. Use Find & Replace (Ctrl+H or Cmd+H)
+3. Replace old hex with new hex:
+   - #D4A5D4 → #YOUR_PRIMARY
+   - #F8C4E6 → #YOUR_SECONDARY
+   - #8B5A8B → #YOUR_ACCENT
+
+
+<!-- ========================================
+    SOCIAL MEDIA BUTTON COLORS
+    ======================================== -->
+
+Instagram: #f09433 to #cc2366
+TikTok: #25f4ee to #242e4f
+Snapchat: #fffc00
+(Already styled in CSS - just update the URLs!)
+
+
+<!-- ========================================
+    HOSTING & DEPLOYMENT
+    ======================================== -->
+
+Ready to go live? Choose one:
+- Netlify: Drag-drop your files
+- Vercel: Connect Git repository
+- GitHub Pages: Free with GitHub
+- Cloudflare Pages: Fast CDN included
+- AWS Amplify: Scalable option
+
+All you need to upload:
+- index.html
+- styles.css
+- assets/ folder (with images)
+
+No build process required!

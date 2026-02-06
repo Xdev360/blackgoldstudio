@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blackgold Studio - Coming Soon">
+    <title>Under Construction - Blackgold Studio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23FED3EE'/><circle cx='50' cy='50' r='35' fill='%23913F4D'/><circle cx='35' cy='35' r='8' fill='%23FED3EE'/></svg>">
+    
+    <link rel="stylesheet" href="game-styles.css">
+</head>
+<body>
+    <!-- ========== GAME CONTAINER ========== -->
+    <div class="game-wrapper">
+        
+        <!-- Back to Home Button -->
+        <a href="index.html" class="back-home-btn">← Back to Home</a>
+        
+        <!-- Game Title -->
+        <div class="game-header">
+            <h1>Under Construction</h1>
+            <p class="subtitle">Our website is coming soon! Meanwhile, enjoy this mini game 🎮</p>
+        </div>
+        
+        <!-- Score Display -->
+        <div class="score-container">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="high-score">High Score: <span id="highScore">0</span></div>
+        </div>
+        
+        <!-- Game Canvas -->
+        <div class="game-container" id="gameContainer">
+            <canvas id="gameCanvas"></canvas>
+            
+            <!-- Start Screen -->
+            <div class="start-screen" id="startScreen">
+                <div class="start-content">
+                    <h2>Lumea Jump</h2>
+                    <p>Click or press SPACE to jump</p>
+                    <p class="instruction">Avoid the spikes and get the highest score!</p>
+                    <button class="game-btn" id="startBtn">Start Game</button>
+                </div>
+            </div>
+            
+            <!-- Game Over Screen -->
+            <div class="game-over-screen hidden" id="gameOverScreen">
+                <div class="game-over-content">
+                    <h2>Game Over!</h2>
+                    <p class="final-score">Your Score: <span id="finalScore">0</span></p>
+                    <p class="best-score">Best Score: <span id="bestScore">0</span></p>
+                    <button class="game-btn retry-btn" id="retryBtn">Retry</button>
+                    <button class="game-btn secondary-btn" id="homeBtn">Back to Home</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Instructions for Mobile -->
+        <div class="mobile-instructions">
+            <p>🎮 <strong>How to Play:</strong> Tap screen or press SPACE to jump • Avoid the spikes • Collect points!</p>
+        </div>
+
+        <!-- ========== LEADERBOARD SECTION ========== -->
+        <div class="leaderboard-section">
+            <div class="leaderboard-header">
+                <h2><i class="fas fa-crown"></i> Top Scores Leaderboard</h2>
+                <p>Best Lumea Jump players of all time</p>
+            </div>
+            
+            <div class="leaderboard-container">
+                <table class="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th class="rank">#</th>
+                            <th class="username">TikTok Username</th>
+                            <th class="score">Score</th>
+                            <th class="date">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboardBody">
+                        <tr class="loading-row">
+                            <td colspan="4" style="text-align: center; padding: 30px;">
+                                <i class="fas fa-spinner fa-spin"></i> Loading leaderboard...
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="game-footer">
+            <p>&copy; 2025 Blackgold Studio • Website Coming Soon</p>
+        </div>
+    </div>
+    
+    <script src="game-script.js"></script>
+</body>
+</html>

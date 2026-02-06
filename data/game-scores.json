@@ -1,0 +1,39 @@
+{
+  "players": [
+    {
+      "id": 1765453145189,
+      "tikTokUsername": "@testuser1",
+      "email": "test1@example.com",
+      "createdAt": "2025-12-11T11:39:05.189Z"
+    },
+    {
+      "id": 1765453160673,
+      "tikTokUsername": "@testuser2",
+      "email": "",
+      "createdAt": "2025-12-11T11:39:20.673Z"
+    },
+    {
+      "id": 1765453164940,
+      "tikTokUsername": "@testuser3",
+      "email": "",
+      "createdAt": "2025-12-11T11:39:24.940Z"
+    }
+  ],
+  "scores": [
+    {
+      "tikTokUsername": "@testuser1",
+      "score": 1500,
+      "timestamp": "2025-12-11T11:39:15.765Z"
+    },
+    {
+      "tikTokUsername": "@testuser2",
+      "score": 2300,
+      "timestamp": "2025-12-11T11:39:20.673Z"
+    },
+    {
+      "tikTokUsername": "@testuser3",
+      "score": 1800,
+      "timestamp": "2025-12-11T11:39:24.940Z"
+    }
+  ]
+}
