@@ -63,34 +63,6 @@ async function writeGameScores(payload) {
     }
 }
 
-// Read subscribers from file
-async function readSubscribers() {
-    try {
-        const data = await fs.readFile(SUBSCRIBERS_FILE, 'utf8');
-        return JSON.parse(data);
-    } catch (error) {
-        console.error('Error reading subscribers:', error);
-        return [];
-    }
-}
-
-// Write subscribers to file
-async function writeSubscribers(subscribers) {
-    try {
-        await fs.writeFile(SUBSCRIBERS_FILE, JSON.stringify(subscribers, null, 2));
-        return true;
-    } catch (error) {
-        console.error('Error writing subscribers:', error);
-        return false;
-    }
-}
-
-// Validate Gmail address
-function isValidGmail(email) {
-    const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/i;
-    return gmailRegex.test(email);
-}
-
 // ========== API ENDPOINTS ==========
 
 // Block removed admin panel
@@ -100,15 +72,8 @@ app.get('/admin-newsletter.html', (_req, res) => {
 
 app.use(express.static(__dirname));
 
-// POST: Subscribe to newsletter
-            });
-            success: true,
-            playerId: data.players.find(p => p.tikTokUsername.toLowerCase() === tikTokUsername.toLowerCase()).id
-        });
-    } catch (error) {
-        console.error('Register player error:', error);
-        res.status(500).json({ success: false, message: 'Server error' });
-    }
+app.get('/', (_req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // POST: Submit a game score (keeps highest per user)
@@ -175,21 +140,24 @@ app.get('/api/game/leaderboard', async (_req, res) => {
     }
 });
 
-// ========== START SERVER ==========
-
-async function startServer() {
-    await ensureDataFile();
-    
-    app.listen(PORT, () => {
-        console.log(`
+// ========== START SERVER (LOCAL) ==========
+if (process.env.VERCEL !== '1') {
+    ensureDataFile().then(() => {
+        app.listen(PORT, () => {
+            console.log(`
 ╔════════════════════════════════════════╗
 ║   BLACKGOLD STUDIO GAME SERVER        ║
 ║   Server running on port ${PORT}        ║
 ╚════════════════════════════════════════╝
 
 API Endpoints:
+  GET  /api/game/leaderboard
+  POST /api/game/submit-score
         `);
+        });
     });
+} else {
+    ensureDataFile();
 }
 
-startServer();
+module.exports = app;
