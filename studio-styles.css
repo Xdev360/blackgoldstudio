@@ -1,0 +1,264 @@
+/* studio-styles.css - Black Gold Studio minimal, luxurious, responsive styles */
+
+:root {
+  --primary: #E6E9E2;
+  --secondary: #78391B;
+  --accent: #F5D4C3;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background: var(--primary);
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(120, 57, 27, 0.05);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+nav .logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--secondary);
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+nav ul li a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  background: var(--primary);
+  padding: 3rem 1rem 2rem 1rem;
+}
+.hero-left {
+  flex: 1 1 320px;
+  min-width: 300px;
+  padding: 2rem;
+}
+.hero-left h1 {
+  font-size: 2.5rem;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+}
+.cta-btn {
+  background: var(--secondary);
+  color: var(--primary);
+  padding: 0.9rem 2.2rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.cta-btn:hover {
+  background: var(--accent);
+  color: var(--secondary);
+}
+.hero-right {
+  flex: 1 1 320px;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-right img {
+  max-width: 100%;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(120, 57, 27, 0.15);
+}
+
+.services {
+  background: var(--primary);
+  padding: 3rem 1rem 2rem 1rem;
+  text-align: center;
+}
+.services h2 {
+  color: var(--secondary);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.service-card {
+  background: var(--accent);
+  color: var(--secondary);
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 16px rgba(120, 57, 27, 0.08);
+  padding: 2rem 1.5rem;
+  min-width: 220px;
+  max-width: 300px;
+  flex: 1 1 220px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.service-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(120, 57, 27, 0.15);
+}
+.service-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+}
+.service-card .view-more {
+  margin-top: 1.2rem;
+  background: var(--secondary);
+  color: var(--primary);
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+.service-card .view-more:hover {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+.newsletter {
+  background: var(--accent);
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+.newsletter h2 {
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+.newsletter-form input[type="email"] {
+  padding: 0.7rem 1.2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--secondary);
+  font-size: 1rem;
+  outline: none;
+}
+.newsletter-form button {
+  background: var(--secondary);
+  color: var(--primary);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.newsletter-form button:hover {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+.instagram {
+  background: var(--primary);
+  padding: 2.5rem 1rem 2rem 1rem;
+  text-align: center;
+}
+.instagram h2 {
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+.instagram-widget {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+footer {
+  background: var(--secondary);
+  color: var(--primary);
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+}
+.footer-info {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.footer-links a {
+  color: var(--primary);
+  text-decoration: underline;
+  margin: 0 0.3rem;
+  font-size: 0.95rem;
+}
+.social-links {
+  margin-top: 1rem;
+}
+.social-links a {
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+.social-links img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+  transition: filter 0.2s;
+}
+.social-links a:hover img {
+  filter: brightness(0.8) sepia(1) hue-rotate(-20deg) saturate(2);
+}
+
+/* Animations */
+section, .service-card, .cta-btn, .newsletter-form, .instagram-widget {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+}
+section.visible, .service-card.visible, .cta-btn.visible, .newsletter-form.visible, .instagram-widget.visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-left, .hero-right {
+    padding: 1rem 0;
+  }
+  .service-cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
