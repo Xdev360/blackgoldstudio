@@ -1,6 +1,6 @@
 # Blackgold Studio - Linktree Landing Page
 
-A clean, mobile-responsive Linktree-style landing page for a skincare & self-care brand. Built with vanilla HTML5 and CSS3 for simplicity and fast performance.
+A clean, mobile-responsive Linktree-style landing page for a photography and creative studio brand. Built with vanilla HTML5 and CSS3 for simplicity and fast performance.
 
 ## 📁 Project Structure
 

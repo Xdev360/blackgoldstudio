@@ -25,7 +25,7 @@ Open `index.html` in any web browser. It works immediately - no installation nee
 Open `index.html` in a text editor and find these lines:
 ```html
 <h1 class="brand-name">Blackgold Studio</h1>        <!-- Change this -->
-<p class="tagline">✨ Glow begins with care ✨</p>  <!-- And this -->
+<p class="tagline">Create. Capture. Elevate.</p>  <!-- And this -->
 ```
 
 ### 3️⃣ **Update Social Links** (< 2 minutes)

@@ -27,11 +27,11 @@
 <!-- Change "Blackgold Studio" to your brand name -->
 
 <!-- TAGLINE: Line ~57 -->
-<p class="tagline">✨ Glow begins with care ✨</p>
+<p class="tagline">Create. Capture. Elevate.</p>
 <!-- Change tagline to your own message -->
 
 <!-- INTRODUCTION TEXT: Line ~68 -->
-<p class="intro-text">Welcome to your skincare sanctuary. Explore our premium self-care collection and join thousands of glowing customers.</p>
+<p class="intro-text">A premium photography and creative studio rental for photographers, brands, and content creators.</p>
 <!-- Update with your brand message -->
 
 

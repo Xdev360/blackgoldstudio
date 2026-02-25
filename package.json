@@ -7,7 +7,7 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "keywords": ["skincare", "landing-page"],
+  "keywords": ["creative-studio", "landing-page"],
   "author": "Blackgold Studio",
   "license": "MIT",
   "dependencies": {
